@@ -20,7 +20,7 @@ special_characers = []
 for char in Fname:
     if not char.isalnum() and not char.isspace():
         special_characers.append(char)
-print("Your special characters are: " + ''.join(special_characers)+" ")
+print("Your special characters are: " + ''.join(special_characers).split()[0])
 
 # Extract digits from the age input
 age = input("How old are you? ")
