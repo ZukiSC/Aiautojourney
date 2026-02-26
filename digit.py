@@ -12,8 +12,8 @@ print("Your capital letters are: " + ''.join(capital_letters))
 lowercase_letters = []
 for char in Fname:
     if char.islower():
-        lowercase_letters.append(char)
-        lowercase_letters.append('[')  
+        lowercase_letters.append('[')
+        lowercase_letters.append(char)  
         lowercase_letters.append(']')
 print("Your lowercase letters are: " + ''.join(lowercase_letters))
 
