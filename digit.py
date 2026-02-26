@@ -5,7 +5,7 @@ for char in Fname:
     if char.isupper():
         capital_letters.append(char)
 
-
+print("Hi, " + Fname + "!")
 print("Your capital letters are: " + ''.join(capital_letters))
 
 # Extract the lowercase letters from the name input
