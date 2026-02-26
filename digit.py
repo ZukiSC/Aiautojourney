@@ -3,7 +3,9 @@ Fname = input("What's your full name? ")
 capital_letters = []
 for char in Fname:
     if char.isupper():
+        capital_letters.append('[')
         capital_letters.append(char)
+        capital_letters.append(']')
 
 print("Hi, " + Fname + "!")
 print("Your capital letters are: " + ''.join(capital_letters))
@@ -21,7 +23,9 @@ print("Your lowercase letters are: " + ''.join(lowercase_letters))
 special_characers = []
 for char in Fname:
     if not char.isalnum() and not char.isspace():
+        lowercase_letters.append('[')
         special_characers.append(char)
+        lowercase_letters.append(']')
         #add spaces to the list of special characters
 print("Your special characters are: " + ''.join(special_characers))
 
