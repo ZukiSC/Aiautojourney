@@ -13,6 +13,7 @@ lowercase_letters = []
 for char in Fname:
     if char.islower():
         lowercase_letters.append(char)
+        lowercase_letters.append(', ')  # Add a comma and space after each lowercase letter 
 print("Your lowercase letters are: " + ''.join(lowercase_letters))
 
 # Extract the special characters from the name input
@@ -20,7 +21,8 @@ special_characers = []
 for char in Fname:
     if not char.isalnum() and not char.isspace():
         special_characers.append(char)
-print("Your special characters are: " + ''.join(special_characers).strip())
+        #add spaces to the list of special characters
+print("Your special characters are: " + ''.join(special_characers))
 
 # Extract digits from the age input
 age = input("How old are you? ")
