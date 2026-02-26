@@ -13,7 +13,8 @@ lowercase_letters = []
 for char in Fname:
     if char.islower():
         lowercase_letters.append(char)
-        lowercase_letters.append(', ')  # Add a comma and space after each lowercase letter 
+        lowercase_letters.append('[')  
+        lowercase_letters.append(']')
 print("Your lowercase letters are: " + ''.join(lowercase_letters))
 
 # Extract the special characters from the name input
